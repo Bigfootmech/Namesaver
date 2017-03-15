@@ -1,0 +1,8 @@
+# git ignore settings
+.project
+
+.settings
+
+.springBeans
+target
+.classpath

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>NameSave: Existing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/resources/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>List of saved names so far:</h1>
+    <div style="width:300px;height:300px;line-height:3em;overflow:scroll;border:2px solid #000000;">
+		<div th:each="name : ${allsaved}" >
+	    	<span th:text="${name.id} + ': ' + ${name.forename} + ' ' + ${name.surname}"></span>
+		</div>
+	</div>
+	
+    <a href="/">Home</a>
+</body>
+</html>

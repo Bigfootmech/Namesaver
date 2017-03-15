@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>NameSave: Saved!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/resources/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>Name Saved!</h1>
+    <p th:text="'Forename: ' + ${names.forename}" />
+    <p th:text="'Surname: ' + ${names.surname}" />
+	
+    <a href="/">Home</a>
+</body>
+</html>
